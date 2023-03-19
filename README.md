@@ -2,6 +2,8 @@
 when a sloth was assigned a research task :3
 
 How to use this tool ?
+
+0. Import required libs (Beautifulsoup, OpenAi, etc...)
 1. Paste your link you need to do research to link.txt (insdie data folder)
 2. Set up your OPEN API KEY in OPENAI_API_KEY.py (inside const_file folder)
 3. Run main.py and enjoy the show. 
