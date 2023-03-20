@@ -1,5 +1,5 @@
 # research_for_sloth
-when a sloth was assigned for research task :3
+when a sloth was assigned a research task :3
 
 How to use this tool ?
 0. Import all required libs (based on requirements.txt)
