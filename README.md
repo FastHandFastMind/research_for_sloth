@@ -2,6 +2,7 @@
 when a sloth was assigned a research task :3
 
 How to use this tool ?
+
 0. Import all required libs (based on requirements.txt)
 1. Paste your links you need to do research to link.txt (each link on a line)
 2. Set up your OPEN API KEY in OPENAI_API_KEY.py (inside const_file folder)
