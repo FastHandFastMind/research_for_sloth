@@ -21,19 +21,20 @@ def crawl(url_list):
                 title = soup.find('h2').get_text()
         except:
             title = "Unknown title"
-        
-        #finding the article's content 
+            
         try:
-            div_max_p = 1
-            div_max_p_class = ""
+            nb_p = soup.find_all('p')
+            threshold = len(nb_p)/2
+
+            div_main_content_class = ""
             for div in soup.find_all('div', {'class': True}):
                 list_of_p = div.findAll('p')
-                if len(list_of_p) >= div_max_p:
-                    div_max_p = len(list_of_p)
-                    div_max_p_class = div['class']
+                if len(list_of_p) > threshold:
+                    div_main_content_class = div['class']
+                    break
             
-            #crawl the content based on the "content" div's class
-            for p in soup.find("div", {"class":div_max_p_class}).findAll('p'):
+            #crawl the content based on the div class that has been found above
+            for p in soup.find("div", {"class":div_main_content_class}).findAll('p'):
                 content = content+p.get_text().strip()
             articles.append(title)
             articles.append(content)
