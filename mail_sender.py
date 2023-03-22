@@ -8,7 +8,8 @@ def send():
     # Email account details
     sender_email = MAIL.SENDER_EMAIL
     sender_password = MAIL.SENDER_PWD
-    recipient_email = MAIL.RECIPIENT_EMAIL
+    recipient_email = [MAIL.RECIPIENT0_EMAIL, MAIL.RECIPIENT1_EMAIL]
+    filename = [MAIL.FILE_NAME0, MAIL.FILE_NAME1]
 
     # Create a message object
     msg = MIMEMultipart()
@@ -16,15 +17,16 @@ def send():
     # Set the email subject, body, and recipient
     msg['Subject'] = MAIL.SUBJECT
     msg['From'] = sender_email
-    msg['To'] = recipient_email
+    msg['To'] = ", ".join(recipient_email)
     body = MAIL.BODY
 
     # Attach the Excel file to the email
-    filename = MAIL.FILE_NAME
-    with open(filename, 'rb') as file:
-        attachment = MIMEApplication(file.read(), _subtype='xlsx')
-        attachment.add_header('Content-Disposition', 'attachment', filename=filename)
-        msg.attach(attachment)
+    for file in filename:
+        with open(file, 'rb') as attachment:
+            part = MIMEApplication(attachment.read(), Name=file)
+            part['Content-Disposition'] = f'attachment; filename="{file}"'
+            msg.attach(part)
+
 
     # Add the email body to the message
     msg.attach(MIMEText(body, 'plain'))
