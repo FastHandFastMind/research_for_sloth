@@ -37,14 +37,15 @@ def crawl(url_list):
                 content = content+p.get_text().strip()
             articles.append(title)
             articles.append(content)
+            articles.append(url)
         except:
             logs.append(url)
             
     # Save the articles into a csvfile
     with open('data/articles.csv', 'w', newline='') as csvfile:
         writer = csv.writer(csvfile)
-        for i in range(0, len(articles), 2):
-            writer.writerow([articles[i],articles[i+1]])
+        for i in range(0, len(articles), 3):
+            writer.writerow([articles[i],articles[i+1],articles[i+2]])
     csvfile.close()
 
     # Save the link that cannot be accessed to a logfile
