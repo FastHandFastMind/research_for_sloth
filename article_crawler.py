@@ -24,10 +24,8 @@ def crawl(url_list):
             
         try:
             nb_p = soup.find_all('p')
-            print(len(nb_p))
             threshold = len(nb_p)/2
 
-            div_main_content_class = ""
             for div in soup.find_all('div', {'class': True}):
                 list_of_p = div.findAll('p')
                 if len(list_of_p) > threshold:
