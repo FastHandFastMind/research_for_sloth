@@ -10,9 +10,12 @@ def crawl(url_list):
     try:
         for url in url_list:
             article = NewsPlease.from_url(url)
-            articles.append(article.title)
-            articles.append(article.maintext.strip())
-            articles.append(url)
+            if article.title != None and article.maintext != None:
+                articles.append(article.title)
+                articles.append(article.maintext)
+                articles.append(url)
+            else:
+                logs.append(url)
     except:
         logs.append(url)
             

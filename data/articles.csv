@@ -1,80 +1,15 @@
-OpenAI Releases GPT-4: Now Available In ChatGPT & Bing,"OpenAI has just released its latest AI model, GPT-4, which exhibits human-level performance on various professional and academic benchmarks.
-GPT-4 is a large multimodal model that can accept image and text inputs and generate text outputs.
-In this article, we’ll look at GPT-4’s capabilities, limitations, and the risks involved in using it.
-By the end, you’ll better understand the potential impact of GPT-4 and what it is and isn’t capable of.
-Capabilities
-GPT-4’s capabilities are an improvement over the previous model, GPT-3.5, in terms of reliability, creativity, and handling of nuanced instructions.
-OpenAI tested the model on various benchmarks, including simulated exams designed for humans, and found that GPT-4 outperformed existing large language models.
-It also performs well in languages other than English, including low-resource languages such as Latvian, Welsh, and Swahili.
-Visual Inputs
-GPT-4 can accept both text and images as input, making it capable of generating text outputs based on inputs consisting of both text and images.
-While the model’s visual input capability is still in the research preview stage, it has shown similar capabilities to text-only inputs.
-Steerability
-OpenAI has been working on each aspect of the plan outlined in its post about defining the behavior of AIs, including steerability.
-Developers can now prescribe their AI’s style and task by describing the directions in the “system” message.
-API users can customize their users’ experience within bounds, allowing for significant personalization.
-Limitations
-GPT-4 is not perfect and has similar limitations as earlier GPT models.
-It can still “hallucinate” facts and make reasoning errors, so caution should be taken when using language model outputs, particularly in high-stakes contexts.
-GPT-4 doesn’t know about events after September 2021, which can cause it to make simple reasoning errors and accept false statements as true.
-It may also fail at challenging problems like humans, such as introducing security issues in its code.
-GPT-4 can make confident but incorrect predictions and doesn’t always check its work carefully.
-Interestingly, the base model is good at predicting the accuracy of its answers, but this ability is reduced after post-training.
-Risks & Mitigations
-While GPT-4’s capabilities are significant, it poses new risks, such as generating harmful advice, buggy code, or inaccurate information.
-OpenAI has been working to mitigate these risks, engaging with over 50 experts to adversarially test the model and collecting additional data to improve GPT-4’s ability to refuse dangerous requests.
-As a result, OpenAI has made many improvements to GPT-4 to make it safer than GPT-3.5.
-GPT-4 is 82% less likely to give inappropriate content than the previous version, and it follows policies better regarding sensitive topics like medical advice and self-harm.
-While OpenAI made the model more resistant to bad behavior, generating content that goes against usage rules is still possible.
-GPT-4 can be helpful or harmful to society, OpenAI says, so it’s working with other researchers to understand the potential impacts.
-Training Process
-Like previous GPT models, the GPT-4 base model was trained to predict the next word in a document using publicly available data and data licensed by OpenAI.
-Fine-tuning the model’s behavior using reinforcement learning with human feedback (RLHF) aligns it with the user’s intent within guardrails.
-Predictable Scaling
-A significant focus of the GPT-4 project has been building a deep learning stack that scales predictably.
-OpenAI has developed infrastructure and optimization with predictable behavior across multiple scales and can accurately predict GPT-4’s final loss during training.
-Availability
-Microsoft confirms the new Bing search experience now runs on GPT-4.
-Though it has a usage limit, you can also access GPT-4 with a ChatGPT Plus subscription.
-OpenAI may adjust the usage cap based on demand and system performance. The company is considering adding another subscription tier to allow for more GPT-4 usage.
-To access the GPT-4 API, you must sign up for the waitlist.
-Conclusion
-The creation of GPT-4 marks a significant milestone in OpenAI’s efforts to scale up deep learning.
-While imperfect, it has exhibited human-level performance on various academic and professional benchmarks, making it a powerful tool.
-However, caution should be taken when using language model outputs in high-stakes contexts.
-OpenAI has been working to mitigate risks and build a deep learning stack that scales predictably, which will be critical for future AI systems.
-Featured Image: Muhammad S0hail/Shutterstock
-Source: OpenAI",https://www.searchenginejournal.com/openai-releases-gpt-4-now-available-in-chatgpt/482199/
-"GPT-4: how to use, new features, availability, and more","ChatGPT-4 has officially been announced, confirming the longtime rumors around its improvements to the already incredibly impressive language skills of OpenAI’s ChatGPT.
-OpenAI calls it the company’s “most advanced system, producing safer and more useful responses.” Here’s everything we know about it so far.
-Related Videos
-Availability
-GPT-4 was officially announced on March 13, as was confirmed ahead of time by Microsoft, even though the exact day was unknown. As of now, however, it’s only available in the ChatGPT Plus paid subscription. The current free version of ChatGPT will still be based on GPT-3.5, which is less accurate capable by comparison.
-GPT-4 will also be available as an API “for developers to build applications and services.” Some of the companies that have already integrated GPT-4 include Duolingo, Be My Eyes, Stripe, and Khan Academy. The first public demonstration of GPT-4 was also livestreamed on YouTube, showing off some of its new capabilities.
-How to use GPT-4
-The easiest way to get started with GPT-4 today is to try it out as part of Bing Chat. Microsoft revealed that it’s been using GPT-4 in Bing Chat, which is free to use. Some GPT-4 features are missing from Bing Chat, however, such as visual input. But you’ll still have access to that expanded LLM (large language model) and the advanced intelligence that comes with it. It should be noted that while Bing Chat is free, it is limited to 15 chats per session and 150 sessions per day.
-The only other way to access GPT-4 right now is to upgrade to ChatGPT Plus. To jump up to the $20 paid subscription, just click on “Upgrade to Plus” in the sidebar in ChatGPT. Once you’ve entered your credit card information, you’ll be able to toggle between GPT-4 and older versions of the LLM. You can even double-check that you’re getting GPT-4 responses since they use a black logo instead of the green logo used for older models.
-From there, using GPT-4 is identical to using ChatGPT Plus with GPT-3.5. It’s more capable than ChatGPT, and allows you to do things like fine-tune a dataset to get tailored results that match your needs.
-What’s new in GPT-4?
-GPT-4 is a new language model created by OpenAI that can generate text that is similar to human speech. It advances the technology used by ChatGPT, which is currently based on GPT-3.5. GPT is the acronym for Generative Pre-trained Transformer, a deep learning technology that uses artificial neural networks to write like a human.
-According to OpenAI, this next-generation language model is more advanced in three key areas: creativity, visual input, and longer context. In terms of creativity, OpenAI says GPT-4 is much better at both creating and collaborating with users on creative projects. Examples of these include music, screenplays, technical writing, and even “learning a user’s writing style.”
-GPT-4 Developer Livestream
-The longer context plays into this as well. GPT-4 can now process up to 25,000 words of text from the user. You can even just send GPT-4 a web link and ask it to interact with the text from that page. OpenAI says this can be helpful for the creation of long-form content, as well as “extended conversations.”
-GPT-4 can also now receive images as a basis for interaction. In the example provided on the GPT-4 website, the chatbot is given an image of a few baking ingredients and is asked what can be made with them. It is not currently known if video can also be used in this same way.
-Lastly, OpenAI also says GPT-4 is significantly safer to use than the previous generation. It can reportedly produce 40% more factual responses in OpenAI’s own internal testing, while also being 82% less likely to “respond to requests for disallowed content.”
-OpenAI says it’s been trained with human feedback to make these strides, claiming to have worked with “over 50 experts for early feedback in domains including AI safety and security.”
-As the first users have flocked to get their hands on it, we’re starting to learn what it’s capable of. One user apparently made GPT-4 create a working version of Pong in just sixty seconds, using a mix of HTML and JavaScript.
-Limitations
-While discussing the new capabilities of GPT-4, OpenAI also notes some of the limitations of the new language model. Like previous versions of GPT, OpenAI says the latest model still has problems with “social biases, hallucinations, and adversarial prompts.”
-In other words, it’s not perfect, but OpenAI says these are all issues the company is working to address.
-Does Bing Chat use GPT-4?
-Microsoft originally states that the new Bing, or Bing Chat, was more powerful than ChatGPT. Since OpenAI’s chat uses GPT-3.5, there was an implication at the time that Bing Chat could be using GPT-4. And now, Microsoft has confirmed that Bing Chat is, indeed, built on GPT-4.
-Still, features such as visual input weren’t available on Bing Chat, so it’s not yet clear what exact features have been integrated and which have not.
-Regardless, Bing Chat clearly has been upgraded with the ability to access current information via the internet, a huge improvement over the current version of ChatGPT, which can only draw from the training it received through 2021.
-In addition to internet access, the AI model used for Bing Chat is much faster, something that is extremely important when taken out of the lab and added to a search engine.
-An evolution, not a revolution?
-StrictlyVC in conversation with Sam Altman, part two (OpenAI)
-We haven’t tried out GPT-4 in ChatGPT Plus yet ourselves, but it’s bound to be more impressive, building on the success of ChatGPT. In fact, if you’ve tried out the new Bing Chat, you’ve apparently already gotten a taste of it. Just don’t expect it to be something brand new.
-Prior to the launch of GPT-4, OpenAI CEO Sam Altman said in a StrictlyVC interview posted by Connie Loizos on YouTube that “people are begging to be disappointed, and they will be.”
-There, Altman acknowledged the potential of AGI (artificial general intelligence) to wreak havoc on world economies and expressed that a quick rollout of several small changes is better than a shocking advancement that provides little opportunity for the world to adapt to the changes. As impressive as GPT-4 seems, it’s certainly more of a careful evolution than a full-blown revolution.
-Editors' Recommendations",https://www.digitaltrends.com/computing/chatgpt-4-everything-we-know-so-far/
+HKT48と西スポ、ともに歩んだ12年,"Fの推しごと～2023年3月
+今月31日を限りに休刊となる西スポ。紙面の編集にも長らく携わった身として寂しく思う。
+始まりは「行ってみた」
+初めてHKT48の記事を書いたのは、2012年1月1日の紙面だ。11年11月26日の、こけら落とし公演に「行ってみた」という調子で、当日限りの企画。その後は48グループの盛り上がりを追いかける形で担当業務が続き、「定期的に取り上げた方が良い」という上司からの提案を受け、13年5月から「月イチ活動報告」をスタートさせた。徐々に打ち解け始めたメンバーが本音に近い言葉を発してくれるようになった。
+コロナ禍で対面取材ができない時期もあったが、アンケートも駆使して紙面をつないだ。約10年続けてきた今でも、決して楽にこなせる連載ではないが「月に一度の楽しみ」という読者の言葉が原動力だった。
+思い出深い新潟の夜
+一時は社会現象となったAKB48選抜総選挙。HKT48の誕生後は現地で直接取材するようになり、多くの報道陣に囲まれながらも必死に取材した。
+上位になるほど発表も遅い時間になるため、締め切りとの闘いも厳しかった。投票開始から1日分の票だけを集計した「速報」での順位や、メンバーの状況、ファンの動向に目を配り、事前準備に多くの時間を費やした。
+特に思い出深いのは16年、新潟で開催された第8回だ。HKTのエースの一角だった兒玉遥は前回17位。AKBの表題曲を歌唱できる「選抜」の16人に一歩届かず涙していただけに、雪辱を誓っていた。結果はベスト10の壁をも破る9位。ハードオフエコスタジアム新潟の報道席で、拳を握りしめたことを昨日のことのように思い出す。「ずっとこの景色を見るのが夢でした」。スピーチをメモする手が震えた。思いを込めた「はるっぴ9位 初選抜」の紙面は、拳を突き上げる兒玉の笑顔とともに、脳裏に焼き付いている。
+うれしかった1期生の言葉
+21年11月26日、HKT48の10周年当日は、2カ面ぶち抜きの「連版」を展開した。
+コロナ禍により、思い描いていたような華々しい展開とはならなかったアニバーサリー。記事の掲載も紙面からウェブへと比重が移っていたが、これだけは何としても形に残したかった。HKT48のスタッフにも支援してもらってメンバー全員のコメントを集め、公式記録と照合しながら年表も用意した。
+メンバー一人一人の写真は、劇場公演で撮りためてきたものを使った。1期生の本村碧唯が「Fさんの集大成ですね」と言ってくれたことがうれしかった。編集者にも大変な苦労をさせたが、胸を張って「記念」と呼べる紙面ができたと思っている。
+■ ■
+HKT48の誕生から、その旅路を紙面に刻んできた西スポ。名残は尽きないが、引き続きウェブの世界でもよろしくお願いします。（古川泰裕）",https://www.nishinippon.co.jp/nsp/item/n/1069411/
