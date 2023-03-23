@@ -24,21 +24,19 @@ def crawl(url_list):
             
         try:
             nb_p = soup.find_all('p')
+            print(len(nb_p))
             threshold = len(nb_p)/2
 
             div_main_content_class = ""
             for div in soup.find_all('div', {'class': True}):
                 list_of_p = div.findAll('p')
                 if len(list_of_p) > threshold:
-                    div_main_content_class = div['class']
+                    for p in list_of_p:
+                        content = content+p.get_text().strip()
+                    articles.append(title)
+                    articles.append(content)
+                    articles.append(url)
                     break
-            
-            #crawl the content based on the div class that has been found above
-            for p in soup.find("div", {"class":div_main_content_class}).findAll('p'):
-                content = content+p.get_text().strip()
-            articles.append(title)
-            articles.append(content)
-            articles.append(url)
         except:
             logs.append(url)
             
