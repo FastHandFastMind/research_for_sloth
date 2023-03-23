@@ -1,42 +1,20 @@
-import requests
 import csv
-from bs4 import BeautifulSoup
 from datetime import datetime
-
+from newsplease import NewsPlease
 
 def crawl(url_list):
     articles = []
     logs = []
-
-    for url in url_list:
-        content= ''
-        # Make a request to the website and get the HTML content
-        response = requests.get(url.strip())
-        soup = BeautifulSoup(response.content, 'html.parser')
-        
-        # Extract the title and article content
-        try:
-            title = soup.find('h1').get_text()
-            if title == '':
-                title = soup.find('h2').get_text()
-        except:
-            title = "Unknown title"
-            
-        try:
-            nb_p = soup.find_all('p')
-            threshold = len(nb_p)/2
-
-            for div in soup.find_all('div', {'class': True}):
-                list_of_p = div.findAll('p')
-                if len(list_of_p) > threshold:
-                    for p in list_of_p:
-                        content = content+p.get_text().strip()
-                    articles.append(title)
-                    articles.append(content)
-                    articles.append(url)
-                    break
-        except:
-            logs.append(url)
+   
+    # Extract the article
+    try:
+        for url in url_list:
+            article = NewsPlease.from_url(url)
+            articles.append(article.title)
+            articles.append(article.maintext.strip())
+            articles.append(url)
+    except:
+        logs.append(url)
             
     # Save the articles into a csvfile
     with open('data/articles.csv', 'w', newline='') as csvfile:

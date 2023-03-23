@@ -5,7 +5,7 @@ import mail_sender
 
 url_list = link_reader.read()
 article_crawler.crawl(url_list)
-# chatgpt_request_sender.get_GPT_responses()
+chatgpt_request_sender.get_GPT_responses()
 #mail_sender.send() #setting your gmail application password (sender) first before using this
 
 
