@@ -1,1 +1,1 @@
-KEY = "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"
+KEY = ""
