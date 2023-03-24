@@ -1,3 +1,13 @@
-03/23/2023, 23:07:26
-https://www.walkerplus.com/article/1123417/
+03/24/2023, 12:22:22
+Can't be crawled url list:
+https://www.huffpost.com/entry/ray-epps-tucker-carlson-jan-6-conspiracy_n_641c9c1ce4b01ea5cd93344c
+https://www.huffpost.com/entry/gisele-bundchen-modeling-comfortable_n_641c8460e4b00c3e6078d897
+
 *****************
+
+03/24/2023, 12:22:48
+article's name: やはり予想を超えてこなかったGPT-4と、GPUの未来、ホビイストへの手紙
+article's url: https://wirelesswire.jp/2023/03/84334/?fbclid=IwAR3wEtC84XIKYCqgfa1fu5qzi9kI3PjbqqW2qcH7vQQs9SjWkQY8Lfm76ME
+This model's maximum context length is 4097 tokens, however you requested 8896 tokens (8396 in your prompt; 500 for the completion). Please reduce your prompt; or completion length.
+*****************
+

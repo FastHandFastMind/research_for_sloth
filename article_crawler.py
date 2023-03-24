@@ -7,17 +7,20 @@ def crawl(url_list):
     logs = []
    
     # Extract the article
-    try:
-        for url in url_list:
+    for url in url_list:
+        try:
             article = NewsPlease.from_url(url)
-            if article.title != None and article.maintext != None:
-                articles.append(article.title)
+            if article.maintext != None:
+                if article.title != None:
+                    articles.append(article.title)
+                else:
+                    article.append("Unknown title")
                 articles.append(article.maintext)
                 articles.append(url)
             else:
                 logs.append(url)
-    except:
-        logs.append(url)
+        except:
+            logs.append(url)
             
     # Save the articles into a csvfile
     with open('data/articles.csv', 'w', newline='') as csvfile:
@@ -31,7 +34,8 @@ def crawl(url_list):
         if len(logs) > 0 :
             now = datetime.now()
             logfile.write(now.strftime("%m/%d/%Y, %H:%M:%S")+"\n")
+            logfile.write("Can't be crawled url list:\n")
             for log in logs:
                 logfile.write(log+"\n")
-            logfile.write("*****************")
+            logfile.write("*****************\n\n")
     logfile.close()
